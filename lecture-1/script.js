@@ -1,11 +1,17 @@
-let x = 10;
-let y = 20;
+let x = 20;
+let y = 10;
 
-let z = x;
 
-x=y;
-y=z;
 
- console.log("x=",x);
- console.log("y=",y);
+
+
+ console.log("x=",x-y);
+  
+ x=10;
+
+ console.log("y=",x+y);    
  
+ 
+
+ 
+
