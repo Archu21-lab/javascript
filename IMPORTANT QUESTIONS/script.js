@@ -100,8 +100,8 @@
 
 //wap to print all leap years between a start and end year using while loop do while loop for loop.
 
-let year=2000;
-let end= 2025;
+//let year=2000;
+//let end= 2025;
 
 while(end>=year){
   if(year%4==0){
@@ -126,9 +126,9 @@ for(end=2025; end>=year; year++){
 //wap to print the sum of number from 1 to n using while loop ,do while loop ,for loop.
 
 
-let a=20;
-let j=1;
-let sum=0;
+//let a=20;
+//let j=1;
+//let sum=0;
 
 while(j<=a){
   sum+=j;
@@ -215,28 +215,266 @@ console.log("sum using do while:", sum);
 
 //wap to print fibonacci sequence using while loop ,do while, for loop.
 
-let k=10;
-let b=0, c=1;
-let i=1;
+//let k=10;
+//let b=0, c=1;
+//let i=1;
 
-while(k>=i){
-  console.log(b);
+//while(k>=i){
+  //console.log(b);
 
-  let next= b+c;
-  b=c;
-  c=next;
-  i++;
+  //let next= b+c;
+  //b=c;
+  //c=next;
+  //i++;
 
-}
+//}
 
 //wap to count digits of using while loop,do while loop for loop.
 
-let num=12345;
-let temp=num;
-let count =0;
+//let num=12345;
+//let temp=num;
+//let count =0;
 
-while(temp>0){
-  temp=Math.floor(temp/10);
-  console.log("counts digits of");
-  count++;
-}
+//while(temp>0){
+  //temp=Math.floor(temp/10);
+  //console.log("counts digits of");
+  //count++;
+//}
+
+//do{
+  //temp=Math.floor(temp/10);
+  //count++;
+//}while(temp>0);
+
+//for(let temp=num; temp>0; count++){
+  //count++;
+//}
+
+
+//wap to find sum of digits of a number using while loop.
+
+//let num=1234;
+//let sum=0;
+
+//while(num>0){
+  //sum+=num%10;
+  //sum=sum+digit;
+  //num=Math.floor(num/10);
+  //console.log("sum of digits:",sum)
+//}
+
+//do{
+  //sum+=num%10;
+  //sum=sum+digit;
+  //num=Math.floor(num/10);
+  //console.log(sum)
+//}while(num>0);
+
+//for(sum=0; num>0; num=Math.floor(num/10)){
+ // sum+=num%10;
+  //sum=sum+digit;
+//}
+
+//wap to check whether a number is palindrome or not using while loop.
+
+//let num=121;
+//let originalNum=num;
+//let reverse=0;
+ //while(num>0){
+  //let digit=num%10;
+  //reverse=revesre*10+digit;
+  //num=Math.floor(num/10);
+ //}
+
+ //if(originalNum===reverse){
+  //console.log("palindrome");
+ //}else{
+  //console.log("not a palindrome")
+ //}
+
+ //wap to check number is prime or not using while loop for loop do while loop.
+//let num = parseInt(prompt("Enter a number: "));
+//let i = 2;
+//let isPrime = true;
+
+//if (num <= 1) {
+  //  isPrime = false;
+//}
+
+//while (i <= num / 2) {
+  //  if (num % i === 0) {
+    //    isPrime = false;
+      //  break;
+    //}
+    //i++;
+//}
+
+//if (isPrime) {
+  //  console.log(num + " is a Prime number.");
+//} else {
+ //   console.log(num + " is not a Prime number.");
+//}
+
+
+//for loop
+//let num = parseInt(prompt("Enter a number: "));
+//let isPrime = true;
+
+//if (num <= 1) {
+  //  isPrime = false;
+//}
+
+//for (let i = 2; i <= num / 2; i++) {
+  //  if (num % i === 0) {
+    //    isPrime = false;
+      //  break;
+    //}
+//}
+
+//if (isPrime) {
+ //   console.log(num + " is a Prime number.");
+//} else {
+  //  console.log(num + " is not a Prime number.");
+//}
+
+
+//do while loop
+
+//let num = parseInt(prompt("Enter a number: "));
+//let i = 2;
+//let isPrime = true;
+
+//if (num <= 1) {
+  //  isPrime = false;
+//}
+
+//if (isPrime) {
+  //  do {
+    //    if (num % i === 0) {
+      //      isPrime = false;
+        //    break;
+        //}
+        //i++;
+    //} while (i <= num / 2);
+//}
+
+//if (isPrime) {
+  //  console.log(num + " is a Prime number.");
+//} else {
+ //   console.log(num + " is not a Prime number.");
+//}
+
+//wap to check whether a number is armstrong number or not using while loop,do while loop for loop.
+//let num = parseInt(prompt("Enter a number: "));
+//let temp = num;
+//let sum = 0;
+//let digits = num.toString().length;
+
+//while (temp > 0) {
+  //  let digit = temp % 10;
+    //sum += digit ** digits;
+    //temp = Math.floor(temp / 10);
+//}
+
+//if (sum === num) {
+  //  console.log(num + " is an Armstrong number.");
+//} else {
+  //  console.log(num + " is not an Armstrong number.");
+//}
+
+//let num = parseInt(prompt("Enter a number: "));
+//let temp = num;
+//let sum = 0;
+//let digits = num.toString().length;
+
+//if (num === 0) {
+ //   sum = 0;
+//} else {
+  //  do {
+    //    let digit = temp % 10;
+      //  sum += digit ** digits;
+        //temp = Math.floor(temp / 10);
+    //} while (temp > 0);
+//}
+
+//if (sum === num) {
+  //  console.log(num + " is an Armstrong number.");
+//} else {
+  //  console.log(num + " is not an Armstrong number.");
+//}
+
+
+//let num = parseInt(prompt("Enter a number: "));
+//let temp = num;
+//let sum = 0;
+//let digits = num.toString().length;
+
+//for (; temp > 0; temp = Math.floor(temp / 10)) {
+  //  let digit = temp % 10;
+    //sum += digit ** digits;
+//}
+
+//if (sum === num) {
+  //  console.log(num + " is an Armstrong number.");
+//} else {
+  //  console.log(num + " is not an Armstrong number.");
+//}
+
+//wap to check whether a number  is magic number or not using while loop do while loop for loop.
+
+//let num = parseInt(prompt("Enter a number: "));
+//let temp = num;
+
+//while (temp > 9) {
+  //  let sum = 0;
+    //while (temp > 0) {
+      //  sum += temp % 10;
+        //temp = Math.floor(temp / 10);
+    //}
+    //temp = sum;
+//}
+
+//if (temp === 1) {
+  //  console.log(num + " is a Magic Number.");
+//} else {
+  //  console.log(num + " is not a Magic Number.");
+//}
+
+//let num = parseInt(prompt("Enter a number: "));
+//let temp = num;
+
+//if (temp === 0) {
+  //  console.log(num + " is not a Magic Number.");
+//} else {
+ //   do {
+   //     let sum = 0;
+     //   do {
+       //     sum += temp % 10;
+         //   temp = Math.floor(temp / 10);
+       // } while (temp > 0);
+      //  temp = sum;
+    //} while (temp > 9);
+
+    //if (temp === 1) {
+      //  console.log(num + " is a Magic Number.");
+    //} else {
+      //  console.log(num + " is not a Magic Number.");
+   // }
+//}
+
+//let num = parseInt(prompt("Enter a number: "));
+//let temp = num;
+
+//for (; temp > 9;) {
+  //  let sum = 0;
+    //for (; temp > 0; temp = Math.floor(temp / 10)) {
+      //  sum += temp % 10;
+    //}
+   // temp = sum;
+//}
+
+//if (temp === 1) {
+  //  console.log(num + " is a Magic Number.");
+//} else {
+  //  console.log(num + " is not a Magic Number.");
+//}
