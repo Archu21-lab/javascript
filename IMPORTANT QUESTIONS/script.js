@@ -478,3 +478,4 @@ console.log("sum using do while:", sum);
 //} else {
   //  console.log(num + " is not a Magic Number.");
 //}
+
