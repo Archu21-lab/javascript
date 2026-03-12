@@ -35,4 +35,5 @@
   while (year<=3000){ //jo year tak leap year find krna hai vo likho 
    console.log(year); //yha pr print hoga vo sab leap year.
    year+=4; //leap year har 4 saal me aata hai isliye 4 add kiya.
+
   }
