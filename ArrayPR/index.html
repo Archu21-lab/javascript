@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice of js</title>
+</head>
+
+<body>
+    <script>
+        //write a function that makes an array of numbers and returns the sum of all elements.
+
+        // function sumArray(numbers){
+        //     let sum=0;
+        //     for(let i=0; i<numbers.length; i++){
+        //         sum+= numbers[i];
+        //     }
+        //     return sum;
+        // }
+
+        // const arr=[1,2,3,4,5];
+        // console.log(sumArray(arr));
+
+        //write a function that takes an array of largest numbers of an array.
+
+        // function getLargestnumber(arr){
+        //     let largest=arr[0];
+
+        //     for(let i=1; i < arr.length; i++){
+        //         if (arr[i] > largest) {
+        //             largest=arr[i];
+        //         }
+        //     }
+
+        //     return largest;
+        // }
+
+        // const numbers=[5,12,8,21,85];
+        // const result= getLargestnumber(numbers);
+
+        // console.log(result);
+
+
+        //write a function that takes an array and returns the smallest numbers in the array.
+
+        //     function getSmallestNumber(arr) {
+        //   if (arr.length === 0) return null; // handle empty array
+
+        //  let smallest = arr[0];
+
+        //   for (let i = 1; i < arr.length; i++) {
+        //    if (arr[i] < smallest) {
+        //     smallest = arr[i];
+        //   }
+        //  }
+
+        //   return smallest;
+        // }
+
+        //  const numbers = [5, 3, 9, 1, 6];
+        //   console.log(getSmallestNumber(numbers)); 
+
+
+
+        //write a function that counts how many even numbers are present in an array.
+
+        // function countEvenNumbers(arr) {
+        //     let count = 0;
+
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if (arr[i] % 2 === 0) {
+        //             count++;
+        //         }
+        //     }
+
+        //     return count;
+        // }
+
+        // const numbers = [1, 2, 3, 4, 5, 6];
+
+        // console.log(countEvenNumbers(numbers));
+
+
+        //write the functions that counts how many odd numbers are present in an array.
+
+        // function countOddNumbers(arr) {
+        //     let count = 0;
+
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if (arr[i] % 2 !== 0) {
+        //             count++;
+        //         }
+        //     }
+
+        //     return count;
+        // }
+
+
+        // const numbers = [1, 2, 3, 4, 5, 6, 7];
+
+        // console.log(countOddNumbers(numbers));
+
+        //write a function that takes an array and returns the average of all numbers.
+
+        // function getAverage(arr) {
+        //     if (arr.length === 0) return 0;
+
+        //     let sum = 0;
+
+        //     for (let i = 0; i < arr.length; i++) {
+        //         sum += arr[i];
+        //     }
+
+        //     return sum / arr.length;
+        // }
+
+        // const numbers = [10, 20, 30, 40];
+
+        // console.log(getAverage(numbers));
+
+
+        //write a function  that takes an array and returns  a new array containing only positive numbers.
+
+
+        // function getPositiveNumbers(arr) {
+        //     let result = [];
+
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if (arr[i] > 0) {
+        //             result.push(arr[i]);
+        //         }
+        //     }
+
+        //     return result;
+        // }
+
+        // const numbers = [-3, 5, -1, 8, 0, 2];
+
+        // console.log(getPositiveNumbers(numbers));
+
+
+        console.log("write a function that takes an array and returns the index of a given element.")
+
+        // function findIndex(arr, element) {
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if (arr[i] === element) {
+        //             return i;
+        //         }
+        //     }
+        //     return -1; // if element is not found
+        // }
+
+        // const numbers = [10, 20, 30, 40];
+
+        // console.log(findIndex(numbers, 30));
+
+
+        //write a function that reverse an array without using the reverse () method .
+
+        // function reverseArray(arr) {
+        //     let reversed = [];
+
+        //     for (let i = arr.length - 1; i >= 0; i--) {
+        //         reversed.push(arr[i]);
+        //     }
+
+        //     return reversed;
+        // }
+
+        // const numbers = [1, 2, 3, 4, 5];
+
+        // console.log(reverseArray(numbers));
+
+
+        //write a function that removes duplicate elements from an array.
+
+        // function removeDuplicates(arr) {
+        //     let result = [];
+
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if (!result.includes(arr[i])) {
+        //             result.push(arr[i]);
+        //         }
+        //     }
+
+        //     return result;
+        // }
+
+
+        // const numbers = [1, 2, 2, 3, 4, 4, 5];
+
+        // console.log(removeDuplicates(numbers));
+
+
+        //write a function that makes an array of numbers and returns the square of each element.
+        // function squareArray(arr) {
+        //     let result = [];
+
+        //     for (let i = 0; i < arr.length; i++) {
+        //         result.push(arr[i] * arr[i]);
+        //     }
+
+        //     return result;
+        // }
+
+        // const numbers = [1, 2, 3, 4];
+
+        // console.log(squareArray(numbers));
+
+        //write a functions  that merge two array into one array.
+        // function mergeArrays(arr1, arr2) {
+        //     return arr1.concat(arr2);
+        // }
+
+        // const numbers = [1, 2]
+        // console.log(mergeArrays(numbers));
+        //write a functions that checks whether a given value exists in an array or not.
+        // function containsValue(arr, value) {
+        //     if (arr.includes(value)) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // }
+        //write a functions that sorts an array in ascending order without using sort().
+        //write a functions that returns the second largest number in an array.
+        // function secondLargest(arr) {
+        //     if (arr.length < 2) return null;
+
+        //     let largest = -Infinity;
+        //     let second = -Infinity;
+
+        //     for (let num of arr) {
+        //         if (num > largest) {
+        //             second = largest;
+        //             largest = num;
+        //         } else if (num > second && num !== largest) {
+        //             second = num;
+        //         }
+        //     }
+
+        //     return second === -Infinity ? null : second;
+        // }
+
+        //write a functions that returns a new array containing numbers divisible by 5.                                                
+        function divisibleByFive(arr) {
+            let result = [];
+
+            for (let num of arr) {
+                if (num % 5 === 0) {
+                    result.push(num);
+                }
+            }
+
+            return result;
+        }
+
+        const numbers = [45,56,78];
+         console.log(divisibleByFive(numbers))
+
+
+
+    </script>
+</body>
+
+</html>
