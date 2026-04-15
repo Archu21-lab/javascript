@@ -13,14 +13,20 @@
     <section>
         <div class="container">
             <h1 class="text-center">Kaun Banega Crore Pati??</h1>
+            <div class="text-center">
+                <p class="mt-4 fs-4">Time Left</p>
+                <p  id="timer" class="text-danger fs-1 fw-bold">
+                    53
+                </p>
+            </div>
             <hr class="my-4">
             <div class="d-flex justify-content-center">
 
 
                 <div class="col-8">
                     <div>
-                        <span class="fs-4">Q-1</span>
-                        <p class="fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+                        <span id="question-index" class="fs-4">Q-1</span>
+                        <p id="question" class="fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
                             doloremque
                             debitis totam doloribus ipsum iure neque! Nam optio sequi est!</p>
                     </div>
@@ -29,21 +35,24 @@
                     <div>
                         <div class="bg-light p-2 text-dark rounded border border-1 fs-5 shadow my-2">
                             <span>A.</span>
-                            <span class="option-a">Lorem, ipsum dolor.</span>
+                            <span id="option-a">Lorem, ipsum dolor.</span>
                         </div>
                         <div class="bg-light p-2 text-dark rounded border border-1 fs-5 shadow my-2">
                             <span>B.</span>
-                            <span class="option-b">Lorem, ipsum dolor.</span>
+                            <span id="option-b">Lorem, ipsum dolor.</span>
                         </div>
                         <div class="bg-light p-2 text-dark rounded border border-1 fs-5 shadow my-2">
                             <span>C.</span>
-                            <span class="option-c">Lorem, ipsum dolor.</span>
+                            <span id="option-c">Lorem, ipsum dolor.</span>
                         </div>
                         <div class="bg-light p-2 text-dark rounded border border-1 fs-5 shadow my-2">
                             <span>D.</span>
-                            <span class="option-d">Lorem, ipsum dolor.</span>
+                            <span id="option-d">Lorem, ipsum dolor.</span>
                         </div>
 
+                    </div>
+                    <div class="my-3 text-end">
+                        <button id="next-button" class="btn btn-primary fs-6">Next</button>
                     </div>
                 </div>
             </div>
