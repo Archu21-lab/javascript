@@ -156,26 +156,56 @@ const option_d = document.getElementById("option-d")
 
 const next_button = document.getElementById("next-button")
 
+
+
 let currentIndex = 0;
+let timecounter = 5;
+let intervalId;
 
 
 function displayQuestion() {
-    question_index.textContent = "Q." + (currentIndex + 1);
-    question.textContent = questionList[currentIndex].question;
+    if (currentIndex > questionList.length - 1) {
+        clearInterval(intervalId);
+    } else {
+        question_index.textContent = "Q." + (currentIndex + 1);
+        question.textContent = questionList[currentIndex].question;
 
-    option_a.textContent = questionList[currentIndex].options.A;
-    option_b.textContent = questionList[currentIndex].options.B;
-    option_c.textContent = questionList[currentIndex].options.C;
-    option_d.textContent = questionList[currentIndex].options.D;
+        option_a.textContent = questionList[currentIndex].options.A;
+        option_b.textContent = questionList[currentIndex].options.B;
+        option_c.textContent = questionList[currentIndex].options.C;
+        option_d.textContent = questionList[currentIndex].options.D;
+    }
 }
 
 next_button.addEventListener("click", () => {
     currentIndex++;
     if (currentIndex < questionList.length) {
         displayQuestion();
+        if (currentIndex == 9) {
+            next_button.textContent = "submit";
+        }
     } else {
         alert("All Questions Attempted !!");
     }
 })
 
+
+function stratTimer() {
+    clearInterval(intervalId);
+    timecounter = 5;
+    intervalId = setInterval(() => {
+        timer.textContent = timecounter;
+        timecounter--;
+        if (timecounter < 0) {
+            currentIndex++;
+            displayQuestion();
+            stratTimer();
+        }
+    }, 1000)
+    stratTimer();
+}
+
+stratTimer();
+
 displayQuestion();
+
