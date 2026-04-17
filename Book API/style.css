@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.book{
+    display: flex;
+    margin: 8px;
+}
