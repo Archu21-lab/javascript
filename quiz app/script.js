@@ -131,17 +131,17 @@ const optionB = document.getElementById("option-B");
 const optionC = document.getElementById("option-C");
 const optionD = document.getElementById("option-D");
 
-const optBoxA = document.getElementById("opt-box-A");
-const optBoxB = document.getElementById("opt-box-B");
-const optBoxC = document.getElementById("opt-box-C");
-const optBoxD = document.getElementById("opt-box-D");
+const optionBoxA = document.getElementById("option-box-A");
+const optionBoxB = document.getElementById("option-box-B");
+const optionBoxC = document.getElementById("option-box-C");
+const optionBoxD = document.getElementById("option-box-D");
 
 const nextBtn = document.getElementById("next-button");
 
 let currentIndex = 0;
 let timeCounter = 60;
 let intervalId;
-let ansList = [];
+let answerList = [];
 let score = 0;
 
 function displayQuestions() {
@@ -187,7 +187,7 @@ function startTimer() {
 
 function scoreCounter() {
     questionList.forEach((que, i) => {
-        if (que.answer == ansList[i]) {
+        if (que.answer == answerList[i]) {
             score++;
         }
     });
@@ -204,17 +204,17 @@ function scoreCounter() {
     //   }
 }
 
-optBoxA.addEventListener("click", () => {
-    ansList.push("A");
+optionBoxA.addEventListener("click", () => {
+    answerList.push("A");
 });
-optBoxB.addEventListener("click", () => {
-    ansList.push("B");
+optionBoxB.addEventListener("click", () => {
+    answerList.push("B");
 });
-optBoxC.addEventListener("click", () => {
-    ansList.push("C");
+optionBoxC.addEventListener("click", () => {
+    answerList.push("C");
 });
-optBoxD.addEventListener("click", () => {
-    ansList.push("D");
+optionBoxD.addEventListener("click", () => {
+    answerList.push("D");
 });
 
 displayQuestions();
