@@ -3,14 +3,24 @@
 // })
 
 const productsDivision = document.getElementById("products-div")
+const totalPrice = document.getElementById("total-price")
 let allProducts = [];
 
 async function addToCart(i) {
+   
   // const res = await fetch("https://dummyjson.com/products")
   // const data = await res.json();
   const arr = JSON.parse(localStorage.getItem("carts")) || [];
-  allProducts[i].qty = 1;
-  arr.push(allProducts[i]);
+
+  const res = arr.findIndex((e) => e.id == allProducts[i].id)
+  if (res == -1) {
+    allProducts[i].qty = 1;
+    arr.push(allProducts[i]);
+  }else{
+    arr[res].qty++;
+    
+  }
+
   localStorage.setItem("carts", JSON.stringify(arr));
 }
 
